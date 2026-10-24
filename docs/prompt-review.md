@@ -1,15 +1,12 @@
 # Prompt Review Note
 
 ## Clarity
-The current `docs/prompt-review.md` uses clear headings and actionable next steps. However, its claims that no prompt-related file exists and that `docs/` is empty conflict with the returned repository contents: this review note is present. Distinguish the absence of actual prompt source text in the reviewed material from the presence of a prompt-related review document.
+The current prompt-related file (`docs/prompt-review.md`) is well-structured and clearly organized into sections covering clarity, completeness, and next steps. It accurately distinguishes between the presence of review documentation and the absence of functional prompt source text. The repository contains only `README.md` (content: `hello world`) and `docs/prompt-review.md`.
 
 ## Completeness
-The note covers clarity, completeness, and next steps, but the returned material contains no actual prompt instructions to assess. `README.md` contains only `hello world`. Prompt purpose, inputs, expected outputs, constraints, and examples therefore cannot be evaluated from these sources; repository-wide absence should not be asserted from the reviewed material alone.
+The review covers clarity, completeness, and next steps based on the returned repository contents. However, functional prompt specifications—such as system prompts, input variables, output formatting constraints, and example interactions—are entirely absent from the repository. Full prompt evaluation remains blocked until functional prompt files are added.
 
 ## Next Steps
-1. Identify or add the actual prompt source and reference its exact path in the review.
-2. Review that source for purpose, input/output requirements, constraints, and examples.
-3. Keep repository descriptions aligned with the observed contents; `docs/` contains this review note.
-
-## Source
-Based on repository content returned by `get_file_contents`: the root listing (default-ref URLs identify `main`), the `docs/` listing, and the existing `docs/prompt-review.md` on `main` (pre-update SHA: `b026302e0d6bf83a9dcfb988ffaeec1e3320d302`). No prompt source text was invented.
+1. Add dedicated prompt files or templates to the repository with designated paths.
+2. Specify prompt requirements including objective, target model, input parameters, constraints, and test examples.
+3. Update `docs/prompt-review.md` to evaluate the actual prompt definitions once committed.
